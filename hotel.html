@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sule Shangri-La Yangon – LuxuryTrip</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/hotel.css">
+</head>
+<body data-nights="3">
+<div class="app hotel-page">
+
+  <!-- Gallery : ပုံလမ်းကြောင်းကို style="--img:url(...)" မှာ ပြင်ပါ -->
+  <section class="gallery">
+    <div class="slides" id="slides">
+      <div class="slide" style="--img:url(images/hotel-1.jpg)"></div>
+      <div class="slide" style="--img:url(images/hotel-2.jpg)"></div>
+      <div class="slide" style="--img:url(images/hotel-3.jpg)"></div>
+    </div>
+    <div class="gallery-top">
+      <button class="round" id="btn-back" aria-label="Back">←</button>
+      <div class="right">
+        <button class="round" aria-label="Share">⤴</button>
+        <button class="round fav" id="btn-fav" aria-label="Favorite">♡</button>
+      </div>
+    </div>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+  </section>
+
+  <main class="sheet">
+    <h1>Sule Shangri-La Yangon</h1>
+    <div class="meta">
+      <span><span class="star">★</span> <b>4.8</b> (12K reviews)</span>
+      <span>📍 Yangon, Myanmar</span>
+    </div>
+
+    <section class="block">
+      <div class="trip">
+        <div><small>Check In</small><b>Jun 15</b></div>
+        <div><small>Check Out</small><b>Jun 18</b></div>
+        <div><small>Guests</small><b>2 Adults</b></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>About</h2>
+      <p class="desc clamp" id="desc">Located in the heart of downtown Yangon, this five-star hotel offers spacious rooms with city views, an outdoor pool, spa, and several restaurants. It is a short walk from Sule Pagoda and the colonial-era city centre, and about 30 minutes from the airport.</p>
+      <button class="more" id="btn-more">Read more</button>
+    </section>
+
+    <section class="block">
+      <h2>Amenities</h2>
+      <div class="amen">
+        <div><span>📶</span>Free Wi-Fi</div>
+        <div><span>🏊</span>Pool</div>
+        <div><span>💆</span>Spa</div>
+        <div><span>🍽️</span>Breakfast</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Choose a room</h2>
+      <div class="rooms">
+        <button class="room on" data-price="120" style="--img:url(images/room-1.jpg)">
+          <div class="pic" style="--img:url(images/room-1.jpg)"></div>
+          <div class="txt"><h3>Deluxe Room</h3><p>King bed · City view</p></div>
+          <div class="p">$120<small>/ night</small></div>
+        </button>
+        <button class="room" data-price="180">
+          <div class="pic" style="--img:url(images/room-2.jpg)"></div>
+          <div class="txt"><h3>Executive Suite</h3><p>Lounge access · Breakfast</p></div>
+          <div class="p">$180<small>/ night</small></div>
+        </button>
+        <button class="room" data-price="320">
+          <div class="pic" style="--img:url(images/room-3.jpg)"></div>
+          <div class="txt"><h3>Presidential Suite</h3><p>2 bedrooms · Private butler</p></div>
+          <div class="p">$320<small>/ night</small></div>
+        </button>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Guest reviews</h2>
+      <article class="review"><header><span>Aye M.</span><span class="star">★ 5.0</span></header>Spotless rooms and a very helpful front desk. The pool at sunset is lovely.</article>
+      <article class="review"><header><span>David K.</span><span class="star">★ 4.5</span></header>Great location for exploring downtown. Breakfast had plenty of choice.</article>
+    </section>
+  </main>
+
+  <footer class="book-bar">
+    <div><small>Total · <span id="nights-label"></span></small><b id="total">$360</b></div>
+    <button class="btn-gold" id="btn-book">Book Now →</button>
+  </footer>
+</div>
+<script src="js/hotel.js"></script>
+</body>
+</html>
