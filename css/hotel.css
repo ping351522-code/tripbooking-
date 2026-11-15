@@ -1,0 +1,62 @@
+/* ===== hotel.css : Hotel detail စာမျက်နှာအတွက်သာ ===== */
+.hotel-page{padding-bottom:110px}
+
+/* Gallery */
+.gallery{position:relative}
+.slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.slides::-webkit-scrollbar{display:none}
+.slide{flex:none;width:100%;height:300px;scroll-snap-align:start;background:var(--img),linear-gradient(135deg,#4d9ed1,#1a3a6e);background-size:cover;background-position:center}
+.gallery-top{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px}
+.round{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;font-size:18px;color:var(--navy)}
+.round.fav.on{color:#e53935}
+.gallery-top .right{display:flex;gap:10px}
+.dots{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);display:flex;gap:6px}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.6)}
+.dots i.on{width:22px;border-radius:6px;background:var(--gold)}
+
+/* Main sheet */
+.sheet{position:relative;margin-top:-28px;background:var(--bg);border-radius:28px 28px 0 0;padding:22px 16px 0}
+.sheet h1{font-size:23px;font-weight:700}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px;color:var(--muted)}
+.meta .star{color:var(--gold-3)}
+.meta b{color:var(--text);font-weight:600}
+
+.block{margin-top:22px}
+.block h2{font-size:17px;font-weight:700;margin-bottom:10px}
+.desc{font-size:14px;line-height:1.6;color:var(--muted)}
+.desc.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more{margin-top:6px;font-size:13.5px;font-weight:600;color:var(--gold-3)}
+
+/* Amenities */
+.amen{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.amen div{background:#fff;border-radius:14px;padding:12px 4px;text-align:center;font-size:11.5px;font-weight:500;box-shadow:0 2px 8px rgba(20,35,100,.05)}
+.amen span{display:block;font-size:22px;margin-bottom:4px}
+
+/* Rooms */
+.rooms{display:grid;gap:10px}
+.room{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#fff;border:2px solid transparent;border-radius:16px;padding:12px;box-shadow:0 2px 10px rgba(20,35,100,.06)}
+.room.on{border-color:var(--gold)}
+.room .pic{width:64px;height:64px;border-radius:12px;flex:none;background:var(--img),linear-gradient(135deg,#6f8fe0,#1a2f72);background-size:cover}
+.room .txt{flex:1}
+.room h3{font-size:14.5px;font-weight:600}
+.room p{font-size:12px;color:var(--muted);margin-top:2px}
+.room .p{font-weight:700;font-size:15px;text-align:right}
+.room .p small{display:block;font-weight:400;font-size:11px;color:var(--muted)}
+
+/* Trip summary */
+.trip{display:flex;justify-content:space-between;background:#fff;border-radius:16px;padding:14px;font-size:13px}
+.trip small{display:block;color:var(--muted);font-size:11.5px;margin-bottom:2px}
+.trip b{font-weight:600}
+
+/* Reviews */
+.review{background:#fff;border-radius:16px;padding:14px;font-size:13.5px;line-height:1.5;color:var(--muted);box-shadow:0 2px 10px rgba(20,35,100,.05)}
+.review+.review{margin-top:10px}
+.review header{display:flex;justify-content:space-between;color:var(--text);font-weight:600;margin-bottom:4px}
+.review .star{color:var(--gold-3)}
+
+/* Bottom bar */
+.book-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:var(--navy);border-radius:22px 22px 0 0;
+  display:flex;align-items:center;justify-content:space-between;padding:14px 18px calc(env(safe-area-inset-bottom,0px) + 16px);color:#fff}
+.book-bar small{display:block;font-size:12px;color:#b8c0e6}
+.book-bar b{font-size:22px;color:var(--gold-2)}
+.book-bar .btn-gold{padding:13px 26px}
