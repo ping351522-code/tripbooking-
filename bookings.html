@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/bookings.css">
+<title>My Bookings – LuxuryTrip</title>
+</head>
+<body data-page="bookings">
+<div class="app page">
+
+  <!-- ထိပ်က မြို့ပုံ (images/city.jpg ထည့်ရင် ပေါ်မယ်) -->
+  <header class="city" style="--img:url(images/city.jpg)">
+    <div class="bar"><span class="brand">LuxuryTrip</span><a href="account.html" class="avatar" aria-label="Account"></a></div>
+  </header>
+
+  <!-- Summary card -->
+  <section class="summary">
+    <div class="who"><h1>Aung Kyaw</h1><span class="tier">🏅 Gold Member</span></div>
+
+    <h2 class="ptitle">Nights booked <span id="nights-txt">(0/40)</span></h2>
+    <div class="track"><div class="fill" id="fill"></div></div>
+    <div class="ticks"><span>0</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25</span><span>30</span><span>35</span><span>40</span></div>
+    <p class="hint" id="hint"></p>
+
+    <a href="index.html#top-rated" class="btn-main">Book a Hotel</a>
+
+    <div class="stats">
+      <div><div class="ic">💵</div><h3>Total Spent</h3><b id="spent">$0</b><p>Sum of your confirmed bookings</p></div>
+      <div><div class="ic">🎁</div><h3>Reward Points</h3><b id="points">0</b><p>Earn 1 point per $1 and use it on future stays</p></div>
+    </div>
+  </section>
+
+  <main class="content list-area">
+    <div class="chips" id="chips">
+      <button class="chip on" data-status="all">All</button>
+      <button class="chip" data-status="ok">Confirmed</button>
+      <button class="chip" data-status="wait">Pending</button>
+      <button class="chip" data-status="off">Cancelled</button>
+    </div>
+    <div id="list"></div>
+    <p class="empty" id="empty">No bookings here yet.</p>
+  </main>
+</div>
+<script src="js/nav.js"></script>
+<script src="js/bookings.js"></script>
+</body></html>
