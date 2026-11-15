@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/admin.css">
+<title>Messages – Admin</title></head>
+<body data-admin="messages">
+<div class="app admin"><div class="admin-shell">
+  <main class="admin-main">
+    <div class="admin-top"><div><h1>Messages</h1><p>Chat with users directly</p></div></div>
+    <div class="chat-wrap">
+      <div class="chat-list" id="conv-list"></div>
+      <div class="chat-main">
+        <div class="chat-msgs" id="msgs"></div>
+        <div class="chat-input"><input id="text" placeholder="Type a reply…"><button id="send">Send</button></div>
+      </div>
+    </div>
+  </main>
+</div></div>
+<script src="js/store.js"></script><script src="js/admin-guard.js"></script><script src="js/admin-nav.js"></script><script src="js/admin-messages.js"></script>
+</body></html>
 
