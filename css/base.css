@@ -1,15 +1,33 @@
-/* ===== base.css : စာမျက်နှာအားလုံးမှာ မျှသုံးမယ့် အရောင်/font/reset ===== */
+/* base.css : စာမျက်နှာအားလုံး မျှသုံးမယ့် အရောင်/font/component */
 :root{
   --navy:#0b1a4a; --navy-2:#13296b;
   --gold:#e8b94a; --gold-2:#f6d27a; --gold-3:#c9962b;
   --bg:#f3f4fb; --card:#fff; --text:#0f1b4d; --muted:#5b6485; --line:#e6e8f2;
+  --green:#1f9d63; --orange:#e48a1c; --red:#d8403a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',system-ui,sans-serif;background:#dfe2f0;color:var(--text);display:flex;justify-content:center}
 button{font:inherit;border:0;cursor:pointer;background:none;color:inherit}
 a{color:inherit;text-decoration:none}
-.app{width:100%;max-width:430px;min-height:100vh;background:var(--bg);position:relative}
+.app{width:100%;max-width:430px;min-height:100vh;background:var(--bg);position:relative;overflow-x:hidden}
 .serif{font-family:'Cormorant Garamond',Georgia,serif}
 .btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:14px;font-weight:600;font-size:15px;color:var(--navy);
   background:linear-gradient(180deg,var(--gold-2),var(--gold) 60%,var(--gold-3));box-shadow:0 6px 14px rgba(201,150,43,.35)}
-@media (prefers-reduced-motion:no-preference){button:active{transform:scale(.97)}}
+.btn-line{display:inline-flex;align-items:center;justify-content:center;padding:9px 16px;border-radius:12px;font-size:13px;font-weight:600;border:1.5px solid var(--navy);color:var(--navy);background:#fff}
+.btn-line.danger{border-color:var(--red);color:var(--red)}
+
+/* Tab စာမျက်နှာများအတွက် (Package / Booking / History / Account) */
+.page{padding-bottom:104px}
+.page-head{padding:calc(env(safe-area-inset-top,0px) + 24px) 18px 48px;color:#fff;border-radius:0 0 30px 30px;background:linear-gradient(160deg,#0a1650,#1b2f7c)}
+.page-head h1{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--gold-2)}
+.page-head p{font-size:13px;color:#dfe5ff;margin-top:4px}
+.content{margin:-26px 14px 0;position:relative}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:14px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:9px 18px;border-radius:22px;background:#fff;font-size:13px;font-weight:500;color:var(--muted);box-shadow:0 2px 8px rgba(20,35,100,.08)}
+.chip.on{background:var(--navy);color:var(--gold-2)}
+.card{background:#fff;border-radius:18px;box-shadow:0 2px 12px rgba(20,35,100,.07)}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11.5px;font-weight:600}
+.badge.ok{background:#e0f5ea;color:var(--green)} .badge.wait{background:#fdf0dc;color:var(--orange)} .badge.off{background:#fde4e2;color:var(--red)} .badge.done{background:#e8eaf6;color:var(--navy-2)}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px 0;font-size:14px}
+@media (prefers-reduced-motion:no-preference){button:active{transform:scale(.98)}}
