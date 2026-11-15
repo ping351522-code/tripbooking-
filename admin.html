@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/admin.css">
+<title>Admin Dashboard – LuxuryTrip</title></head>
+<body data-admin="dashboard">
+<div class="app admin"><div class="admin-shell">
+  <main class="admin-main">
+    <div class="admin-top"><div><h1>Dashboard</h1><p>Overview of users, bookings and revenue</p></div></div>
+    <div class="kpis" id="kpis"></div>
+    <section class="panel">
+      <h2>Recent Bookings</h2>
+      <table><thead><tr><th>ID</th><th>User</th><th>Hotel</th><th>Total</th><th>Status</th></tr></thead><tbody id="recent"></tbody></table>
+    </section>
+  </main>
+</div></div>
+<script src="js/store.js"></script><script src="js/admin-guard.js"></script><script src="js/admin-nav.js"></script><script src="js/admin.js"></script>
+</body></html>
 
