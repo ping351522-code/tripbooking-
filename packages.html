@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<title>Packages – LuxuryTrip</title>
+<link rel="stylesheet" href="css/packages.css">
+</head>
+<body data-page="packages">
+<div class="app page">
+  <header class="page-head"><h1>Travel Packages</h1><p>Flights, hotel &amp; experiences in one price</p></header>
+  <main class="content">
+    <div class="chips" id="chips">
+      <button class="chip on" data-cat="all">All</button>
+      <button class="chip" data-cat="city">City</button>
+      <button class="chip" data-cat="beach">Beach</button>
+      <button class="chip" data-cat="culture">Culture</button>
+    </div>
+    <div id="list">
+      <article class="card pkg" data-cat="culture">
+        <div class="pic" style="--img:url(images/yangon.jpg);--g:linear-gradient(135deg,#f2a65a,#3b3a7a)"><span class="days">4D 3N</span></div>
+        <div class="body"><h3>Yangon Golden Heritage</h3><p class="loc">📍 Yangon, Myanmar</p>
+          <div class="inc"><span>✈ Flight</span><span>🏨 5★ Hotel</span><span>🍽 Breakfast</span></div>
+          <div class="row"><div><small>from</small><b>$499</b></div><a class="btn-gold" href="hotel.html">View</a></div></div>
+      </article>
+      <article class="card pkg" data-cat="city">
+        <div class="pic" style="--img:url(images/bangkok.jpg);--g:linear-gradient(135deg,#e9b36a,#24357a)"><span class="days">5D 4N</span></div>
+        <div class="body"><h3>Bangkok City Escape</h3><p class="loc">📍 Bangkok, Thailand</p>
+          <div class="inc"><span>✈ Flight</span><span>🏨 5★ Hotel</span><span>🚐 Transfers</span></div>
+          <div class="row"><div><small>from</small><b>$679</b></div><a class="btn-gold" href="hotel.html">View</a></div></div>
+      </article>
+      <article class="card pkg" data-cat="beach">
+        <div class="pic" style="--g:linear-gradient(135deg,#3fc1c9,#1a3a8f)"><span class="days">6D 5N</span></div>
+        <div class="body"><h3>Phuket Beach Retreat</h3><p class="loc">📍 Phuket, Thailand</p>
+          <div class="inc"><span>✈ Flight</span><span>🏝 Resort</span><span>💆 Spa</span></div>
+          <div class="row"><div><small>from</small><b>$899</b></div><a class="btn-gold" href="hotel.html">View</a></div></div>
+      </article>
+      <article class="card pkg" data-cat="city">
+        <div class="pic" style="--img:url(images/tokyo.jpg);--g:linear-gradient(135deg,#8fb2ff,#e7a3c4)"><span class="days">7D 6N</span></div>
+        <div class="body"><h3>Tokyo Sakura Journey</h3><p class="loc">📍 Tokyo, Japan</p>
+          <div class="inc"><span>✈ Flight</span><span>🏨 5★ Hotel</span><span>🚆 Rail Pass</span></div>
+          <div class="row"><div><small>from</small><b>$1,450</b></div><a class="btn-gold" href="hotel.html">View</a></div></div>
+      </article>
+    </div>
+    <p class="empty" id="empty">No packages in this category.</p>
+  </main>
+</div>
+<script src="js/nav.js"></script>
+<script src="js/packages.js"></script>
+</body></html>
 
